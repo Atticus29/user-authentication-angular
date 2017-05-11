@@ -1,0 +1,21 @@
+{
+  "name": "user-authentication-angular",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mark Fisher <mark.aaron.fisher@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Atticus29/user-authentication-angular",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2"
+  }
+}
