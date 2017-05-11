@@ -7,12 +7,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import { NewUserFormComponent } from './new-user-form/new-user-form.component';
-import { LoginComponent } from './login/login.component';
-import { EmailComponent } from './email/email.component';
-import { SignupComponent } from './signup/signup.component';
-import { MembersComponent } from './members/members.component';
-import { AuthGuard } from './auth.service';
 import { routes } from './app.routes';
 
 export const firebaseConfig = {
@@ -25,12 +19,6 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponentComponent,
-    NewUserFormComponent,
-    LoginComponent,
-    EmailComponent,
-    SignupComponent,
-    MembersComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +28,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
