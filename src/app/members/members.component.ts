@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
 import { moveIn, fallIn, moveInLeft } from '../router.animations';
 
@@ -30,7 +30,7 @@ export class MembersComponent implements OnInit {
     console.log('logged out');
     this.router.navigateByUrl('/login');
   }
-  
+
 
   ngOnInit() {
   }
