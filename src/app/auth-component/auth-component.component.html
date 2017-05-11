@@ -1,7 +1,3 @@
 <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
 
-<div>
-  {{ (user | async)?.uid }}
-</div>
-<button (click)="login()">Login</button>
-<button (click)="logout()">Logout</button>
+<app-new-user-form></app-new-user-form>

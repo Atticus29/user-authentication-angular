@@ -7,6 +7,11 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { AuthComponentComponent } from './auth-component/auth-component.component';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { NewUserFormComponent } from './new-user-form/new-user-form.component';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { SignupComponent } from './signup/signup.component';
+import { MembersComponent } from './members/members.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -18,7 +23,12 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponentComponent
+    AuthComponentComponent,
+    NewUserFormComponent,
+    LoginComponent,
+    EmailComponent,
+    SignupComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,
